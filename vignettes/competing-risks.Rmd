@@ -126,7 +126,7 @@ jointplot(data, Y.col = "dose", Cens.col = "with.status2")
 
 To fit the joint model, we use the usual `joint()` function as
 
-```{r jointmodel, cache=TRUE}
+```{r jointmodel}
 fit2 <- joint(data = data, long.formula = dose ~ time + treat + interaction,
               surv.formula = Surv(with.time, with.status2) ~ treat,
               longsep = FALSE, survsep = FALSE, gpt = 3)
@@ -138,7 +138,7 @@ To estimate standard errors, we use the `jointSE()` function as follows.
 However, we do not run the code in this vignette due to computational time 
 required.
 
-```{r jointmodel_ses, cache=TRUE, eval=FALSE}
+```{r jointmodel_ses, eval=FALSE}
 fit2.se <- jointSE(fit2, n.boot = 100)
 fit2.se
 ```
