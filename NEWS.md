@@ -1,3 +1,9 @@
+# joineR 1.2.5.9000
+
+## Housekeeping
+
+* Relaxed dependency on R (>= 3.6) introduced in the previous version.
+
 # joineR 1.2.4
 
 ## Housekeeping

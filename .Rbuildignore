@@ -7,3 +7,5 @@
 ^cran-comments\.md$
 ^codecov\.yml$
 inst/image
+^doc$
+^Meta$
